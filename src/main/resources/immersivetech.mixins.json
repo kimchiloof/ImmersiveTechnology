@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "mods.kimchiloof.forge_1_20_1.mixin",
+  "package": "mods.kimchiloof.immersivetech.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "forge_1_20_1.refmap.json",
+  "refmap": "immersivetech.refmap.json",
   "mixins": [
   ],
   "client": [

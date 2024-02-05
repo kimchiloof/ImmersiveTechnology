@@ -1,4 +1,4 @@
-package mods.kimchiloof.forge_1_20_1;
+package mods.kimchiloof.immersivetech;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -30,11 +30,11 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(forge_1_20_1.MODID)
-public class forge_1_20_1 {
+@Mod(ImmersiveTech.MODID)
+public class ImmersiveTech {
 
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "forge_1_20_1";
+    public static final String MODID = "immersivetech";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "forge_1_20_1_template" namespace
@@ -61,7 +61,7 @@ public class forge_1_20_1 {
             output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
 
-    public forge_1_20_1() {
+    public ImmersiveTech() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
